@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicListCollectionViewCell" customModule="SearchMusicMVVM" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MusicListCell" id="AVh-fq-bWe" customClass="MusicListCollectionViewCell" customModule="SearchMusicMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dlV-TZ-OgL">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ER3-eR-AbS">
+                        <rect key="frame" x="16" y="0.0" width="343" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ySv-3t-QH9">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="999" constant="100" id="Odh-0v-Maz"/>
+                                    <constraint firstAttribute="width" constant="100" id="z9i-iy-IPh"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Qte-HR-hFy">
+                                <rect key="frame" x="112" y="20" width="231" height="60.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oko-Kz-VPe">
+                                        <rect key="frame" x="0.0" y="0.0" width="221" height="20"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Hello world Whatsup with life">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="17" name="SFProDisplay-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1.3999999999999999" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="IOE-hO-qFi">
+                                        <rect key="frame" x="0.0" y="24" width="95.5" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taylor Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15O-6d-CvU">
+                                                <rect key="frame" x="0.0" y="0.0" width="66" height="14.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cG-E5-wxP">
+                                                <rect key="frame" x="75" y="0.0" width="20.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 Maret 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58X-VA-LUl">
+                                        <rect key="frame" x="0.0" y="42.5" width="100" height="18"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ER3-eR-AbS" secondAttribute="trailing" constant="16" id="0fh-EV-hrV"/>
+                    <constraint firstAttribute="bottom" secondItem="ER3-eR-AbS" secondAttribute="bottom" id="UaO-HP-Oce"/>
+                    <constraint firstItem="ER3-eR-AbS" firstAttribute="top" secondItem="dlV-TZ-OgL" secondAttribute="top" id="xEv-fP-Yvu"/>
+                    <constraint firstItem="ER3-eR-AbS" firstAttribute="leading" secondItem="dlV-TZ-OgL" secondAttribute="leading" constant="16" id="xWj-Sl-nA5"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="artistLabel" destination="15O-6d-CvU" id="VfL-aW-sUz"/>
+                <outlet property="genreLabel" destination="7cG-E5-wxP" id="2NW-R9-HxA"/>
+                <outlet property="imageView" destination="ySv-3t-QH9" id="UE1-lL-a0x"/>
+                <outlet property="labelStackView" destination="Qte-HR-hFy" id="ezR-CY-0m2"/>
+                <outlet property="nameLabel" destination="Oko-Kz-VPe" id="MM1-Bk-2Ek"/>
+                <outlet property="releaseDateLabel" destination="58X-VA-LUl" id="MRZ-po-94V"/>
+            </connections>
+            <point key="canvasLocation" x="42.753623188405797" y="231.69642857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>
