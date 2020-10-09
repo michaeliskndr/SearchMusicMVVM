@@ -13,7 +13,7 @@ class LoadingFooterCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var loadingLabel: UILabel!
     
     func isLoading(_ animated: Bool, done: Bool) {
-        if !animated && !done {
+        if !animated && done {
             loadingLabel.isHidden = true
             activityIndicatorView.stopAnimating()
         } else {
