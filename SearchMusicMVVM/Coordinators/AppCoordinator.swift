@@ -28,11 +28,11 @@ final class AppCoordinator: Coordinator {
     }
     
     func start() {
-        let presenter = UINavigationController()
-        let coordinator = MusicListViewCoordinator(presenter: presenter)
+        let router = UINavigationController()
+        let coordinator = MusicListViewCoordinator(router: router)
         childCoordinators.append(coordinator)
         coordinator.start()
-        window.rootViewController = presenter
+        window.rootViewController = router
         window.makeKeyAndVisible()
     }
 }

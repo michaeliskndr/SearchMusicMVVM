@@ -10,16 +10,16 @@ import UIKit
 
 final class MusicListViewCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
-    let presenter: UINavigationController
+    let router: UINavigationController
     
-    init(presenter: UINavigationController) {
-        self.presenter = presenter
+    init(router: UINavigationController) {
+        self.router = router
     }
     
     func start() {
         let viewModel = MusicListViewViewModel(service: API.shared)
         let controller: MusicListViewController = MusicListViewController(viewModel: viewModel)
-        presenter.setViewControllers([controller], animated: true)
+        router.setViewControllers([controller], animated: true)
     }
     
 }
