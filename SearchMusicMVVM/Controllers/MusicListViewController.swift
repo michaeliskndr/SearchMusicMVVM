@@ -121,6 +121,16 @@ extension MusicListViewController: UICollectionViewDelegate, UICollectionViewDel
         // Spacing between row
         return 8
     }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentSizeHeight = scrollView.contentSize.height
+        let scrollViewHeight = scrollView.frame.height
+        
+        if (offsetY > contentSizeHeight - scrollViewHeight), !viewModel.isPaginating {
+            viewModel.fetchMoreData()
+        }
+    }
 }
 
 extension MusicListViewController: UICollectionViewDataSource {
@@ -134,10 +144,6 @@ extension MusicListViewController: UICollectionViewDataSource {
         case .musicList(let musicCellViewModel):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MusicListCell", for: indexPath) as! MusicListCollectionViewCell
             cell.update(with: musicCellViewModel)
-            
-            if !viewModel.isPaginating {
-                viewModel.fetchMoreData(atLast: indexPath)
-            }
             return cell
         }
     }

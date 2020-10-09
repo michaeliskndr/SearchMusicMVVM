@@ -99,35 +99,33 @@ extension MusicListViewViewModel {
         }
     }
     
-    public func fetchMoreData(atLast indexPath: IndexPath) {
-        if indexPath.item == cells.count - 1 {
-            guard let query = _query, cells.count > 0 else { return }
-            self.isPaginating = !self.isPaginating
-            let offset = cells.count
-            service.searchMusic(query: query, limit: 25, offset: offset) { [weak self] (result) in
-                guard let self = self else {
+    public func fetchMoreData() {
+        guard let query = _query, cells.count > 0 else { return }
+        self.isPaginating = !self.isPaginating
+        let offset = cells.count
+        service.searchMusic(query: query, limit: 25, offset: offset) { [weak self] (result) in
+            guard let self = self else {
+                return
+            }
+            switch result {
+            case .failure(let error):
+                self._error = error
+                DispatchQueue.main.async {
+                    self.errorHandler()
+                }
+            case .success(let response):
+                sleep(2)
+                if response.results.count == 0 {
+                    self.isDonePaginating = true
                     return
                 }
-                switch result {
-                case .failure(let error):
-                    self._error = error
-                    DispatchQueue.main.async {
-                        self.errorHandler()
-                    }
-                case .success(let response):
-                    sleep(2)
-                    if response.results.count == 0 {
-                        self.isDonePaginating = true
-                        return
-                    }
-                    self.cells += response.results.map {
-                        let musicCellViewModel = MusicCellViewModel(music: $0)
-                        return Cell.musicList(musicCellViewModel)
-                    }
-                    self.isPaginating = !self.isPaginating
-                    DispatchQueue.main.async {
-                        self.reload()
-                    }
+                self.cells += response.results.map {
+                    let musicCellViewModel = MusicCellViewModel(music: $0)
+                    return Cell.musicList(musicCellViewModel)
+                }
+                self.isPaginating = !self.isPaginating
+                DispatchQueue.main.async {
+                    self.reload()
                 }
             }
         }
