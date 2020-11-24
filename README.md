@@ -1,4 +1,6 @@
 # Search Music MVVM
+![](SearchMusicMVVM.gif)
+
 ## Implement:
 1. MVVM Design Pattern
 2. Infinite Scroll Collection View
