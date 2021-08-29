@@ -29,7 +29,27 @@
 		AD98E1A42501C67400EF24E7 /* UIApplication + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD98E1A32501C67400EF24E7 /* UIApplication + Extensions.swift */; };
 		ADCCD4CE251B57F000729521 /* URLComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCCD4CD251B57F000729521 /* URLComponents+Extension.swift */; };
 		F5C5021E72C4660B76A1D389 /* Pods_SearchMusicMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA01635DABA629A66BCE8933 /* Pods_SearchMusicMVVM.framework */; };
+		FB505DAB26DB2AC000E798C1 /* SearchMusicMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB505DAA26DB2AC000E798C1 /* SearchMusicMVVMTests.swift */; };
+		FB505DBB26DB2AEC00E798C1 /* SearchMusicMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB505DBA26DB2AEC00E798C1 /* SearchMusicMVVMUITests.swift */; };
+		FB505DC626DB2BC100E798C1 /* MusicListViewViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB505DC526DB2BC100E798C1 /* MusicListViewViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB505DAD26DB2AC000E798C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD98E16F2501B62700EF24E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD98E1762501B62700EF24E7;
+			remoteInfo = SearchMusicMVVM;
+		};
+		FB505DBD26DB2AEC00E798C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD98E16F2501B62700EF24E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD98E1762501B62700EF24E7;
+			remoteInfo = SearchMusicMVVM;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2AAFD94A1365BCA2B7FA6D46 /* Pods-SearchMusicMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchMusicMVVM.release.xcconfig"; path = "Target Support Files/Pods-SearchMusicMVVM/Pods-SearchMusicMVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +79,13 @@
 		AD98E19D2501C58A00EF24E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MusicListViewController.strings; sourceTree = "<group>"; };
 		AD98E1A32501C67400EF24E7 /* UIApplication + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extensions.swift"; sourceTree = "<group>"; };
 		ADCCD4CD251B57F000729521 /* URLComponents+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Extension.swift"; sourceTree = "<group>"; };
+		FB505DA826DB2AC000E798C1 /* SearchMusicMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchMusicMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB505DAA26DB2AC000E798C1 /* SearchMusicMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicMVVMTests.swift; sourceTree = "<group>"; };
+		FB505DAC26DB2AC000E798C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB505DB826DB2AEC00E798C1 /* SearchMusicMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchMusicMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB505DBA26DB2AEC00E798C1 /* SearchMusicMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicMVVMUITests.swift; sourceTree = "<group>"; };
+		FB505DBC26DB2AEC00E798C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB505DC526DB2BC100E798C1 /* MusicListViewViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +94,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C5021E72C4660B76A1D389 /* Pods_SearchMusicMVVM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB505DA526DB2AC000E798C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB505DB526DB2AEC00E798C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				AD98E1792501B62700EF24E7 /* SearchMusicMVVM */,
+				FB505DA926DB2AC000E798C1 /* SearchMusicMVVMTests */,
+				FB505DB926DB2AEC00E798C1 /* SearchMusicMVVMUITests */,
 				AD98E1782501B62700EF24E7 /* Products */,
 				CEB8C660625C44624F21C28C /* Pods */,
 				79ED271CA0DCA88269463DB2 /* Frameworks */,
@@ -167,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				AD98E1772501B62700EF24E7 /* SearchMusicMVVM.app */,
+				FB505DA826DB2AC000E798C1 /* SearchMusicMVVMTests.xctest */,
+				FB505DB826DB2AEC00E798C1 /* SearchMusicMVVMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +254,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FB505DA926DB2AC000E798C1 /* SearchMusicMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBDE130326DB5AF8000385EE /* ViewModelTests */,
+				FB505DAA26DB2AC000E798C1 /* SearchMusicMVVMTests.swift */,
+				FB505DAC26DB2AC000E798C1 /* Info.plist */,
+			);
+			path = SearchMusicMVVMTests;
+			sourceTree = "<group>";
+		};
+		FB505DB926DB2AEC00E798C1 /* SearchMusicMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB505DBA26DB2AEC00E798C1 /* SearchMusicMVVMUITests.swift */,
+				FB505DBC26DB2AEC00E798C1 /* Info.plist */,
+			);
+			path = SearchMusicMVVMUITests;
+			sourceTree = "<group>";
+		};
+		FBDE130326DB5AF8000385EE /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB505DC526DB2BC100E798C1 /* MusicListViewViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -231,18 +303,62 @@
 			productReference = AD98E1772501B62700EF24E7 /* SearchMusicMVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FB505DA726DB2AC000E798C1 /* SearchMusicMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB505DAF26DB2AC000E798C1 /* Build configuration list for PBXNativeTarget "SearchMusicMVVMTests" */;
+			buildPhases = (
+				FB505DA426DB2AC000E798C1 /* Sources */,
+				FB505DA526DB2AC000E798C1 /* Frameworks */,
+				FB505DA626DB2AC000E798C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB505DAE26DB2AC000E798C1 /* PBXTargetDependency */,
+			);
+			name = SearchMusicMVVMTests;
+			productName = SearchMusicMVVMTests;
+			productReference = FB505DA826DB2AC000E798C1 /* SearchMusicMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB505DB726DB2AEC00E798C1 /* SearchMusicMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB505DBF26DB2AEC00E798C1 /* Build configuration list for PBXNativeTarget "SearchMusicMVVMUITests" */;
+			buildPhases = (
+				FB505DB426DB2AEC00E798C1 /* Sources */,
+				FB505DB526DB2AEC00E798C1 /* Frameworks */,
+				FB505DB626DB2AEC00E798C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB505DBE26DB2AEC00E798C1 /* PBXTargetDependency */,
+			);
+			name = SearchMusicMVVMUITests;
+			productName = SearchMusicMVVMUITests;
+			productReference = FB505DB826DB2AEC00E798C1 /* SearchMusicMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		AD98E16F2501B62700EF24E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Michael Iskandar";
 				TargetAttributes = {
 					AD98E1762501B62700EF24E7 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					FB505DA726DB2AC000E798C1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AD98E1762501B62700EF24E7;
+					};
+					FB505DB726DB2AEC00E798C1 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = AD98E1762501B62700EF24E7;
 					};
 				};
 			};
@@ -260,6 +376,8 @@
 			projectRoot = "";
 			targets = (
 				AD98E1762501B62700EF24E7 /* SearchMusicMVVM */,
+				FB505DA726DB2AC000E798C1 /* SearchMusicMVVMTests */,
+				FB505DB726DB2AEC00E798C1 /* SearchMusicMVVMUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,6 +391,20 @@
 				AD98E1982501C3DA00EF24E7 /* MusicListViewController.xib in Resources */,
 				AD98E1842501B62800EF24E7 /* Assets.xcassets in Resources */,
 				AD7F09DD250F480700539063 /* LoadingFooterCollectionReusableView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB505DA626DB2AC000E798C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB505DB626DB2AEC00E798C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +477,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FB505DA426DB2AC000E798C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB505DC626DB2BC100E798C1 /* MusicListViewViewModelTests.swift in Sources */,
+				FB505DAB26DB2AC000E798C1 /* SearchMusicMVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB505DB426DB2AEC00E798C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB505DBB26DB2AEC00E798C1 /* SearchMusicMVVMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB505DAE26DB2AC000E798C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD98E1762501B62700EF24E7 /* SearchMusicMVVM */;
+			targetProxy = FB505DAD26DB2AC000E798C1 /* PBXContainerItemProxy */;
+		};
+		FB505DBE26DB2AEC00E798C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD98E1762501B62700EF24E7 /* SearchMusicMVVM */;
+			targetProxy = FB505DBD26DB2AEC00E798C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AD98E19A2501C3DA00EF24E7 /* MusicListViewController.xib */ = {
@@ -512,6 +674,92 @@
 			};
 			name = Release;
 		};
+		FB505DB026DB2AC000E798C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7GYW5X66V;
+				INFOPLIST_FILE = SearchMusicMVVMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaeliskndr.SearchMusicMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchMusicMVVM.app/SearchMusicMVVM";
+			};
+			name = Debug;
+		};
+		FB505DB126DB2AC000E798C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7GYW5X66V;
+				INFOPLIST_FILE = SearchMusicMVVMTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaeliskndr.SearchMusicMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchMusicMVVM.app/SearchMusicMVVM";
+			};
+			name = Release;
+		};
+		FB505DC026DB2AEC00E798C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7GYW5X66V;
+				INFOPLIST_FILE = SearchMusicMVVMUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaeliskndr.SearchMusicMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SearchMusicMVVM;
+			};
+			name = Debug;
+		};
+		FB505DC126DB2AEC00E798C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U7GYW5X66V;
+				INFOPLIST_FILE = SearchMusicMVVMUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaeliskndr.SearchMusicMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SearchMusicMVVM;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -529,6 +777,24 @@
 			buildConfigurations = (
 				AD98E18C2501B62800EF24E7 /* Debug */,
 				AD98E18D2501B62800EF24E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB505DAF26DB2AC000E798C1 /* Build configuration list for PBXNativeTarget "SearchMusicMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB505DB026DB2AC000E798C1 /* Debug */,
+				FB505DB126DB2AC000E798C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB505DBF26DB2AEC00E798C1 /* Build configuration list for PBXNativeTarget "SearchMusicMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB505DC026DB2AEC00E798C1 /* Debug */,
+				FB505DC126DB2AEC00E798C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -130,6 +130,9 @@ extension MusicListViewController: UICollectionViewDelegate, UICollectionViewDel
         if (offsetY > contentSizeHeight - scrollViewHeight), !viewModel.isPaginating {
             viewModel.fetchMoreData()
         }
+        
+        print("\(offsetY) ContentoffSetY, \(contentSizeHeight) Content Size Height, \(scrollViewHeight) scrollView Height \n")
+        print("\(offsetY) ContentoffsetY, \(contentSizeHeight - scrollViewHeight)")
     }
 }
 
